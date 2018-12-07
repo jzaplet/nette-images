@@ -1,0 +1,22 @@
+{
+    "name": "jzaplet/nette-images",
+    "description": "Thumbnail generator for Nette Framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jiří Zapletal",
+            "email": "zapletalb@wakers.cz"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">= 5.6",
+        "nette/nette": "^2.4"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    }
+}
