@@ -27,7 +27,7 @@ class NetteImagesMacro extends UIMacros
         return $writer->write('   
               $l_img = %node.array;
               echo \' src="\';
-              echo LR\Filters::escapeHtmlText($baseUrl) . \'/\';
+              echo LR\Filters::escapeHtmlText($basePath) . \'/\';
               echo NetteImages\NetteImages::createThumb($l_img[0], $l_img[1], $l_img[2]) . \'"\';
         ');
     }
@@ -37,7 +37,7 @@ class NetteImagesMacro extends UIMacros
         return $writer->write('   
               $l_img = %node.array;
               echo \' href="\';
-              echo LR\Filters::escapeHtmlText($baseUrl) . \'/\';
+              echo LR\Filters::escapeHtmlText($basePath) . \'/\';
               echo NetteImages\NetteImages::createThumb($l_img[0], $l_img[1], $l_img[2]) . \'"\';
         ');
     }
@@ -46,7 +46,7 @@ class NetteImagesMacro extends UIMacros
     {
         return $writer->write('   
               $l_img = %node.array;
-              echo LR\Filters::escapeHtmlText($baseUrl) . \'/\';
+              echo LR\Filters::escapeHtmlText($basePath) . \'/\';
               echo NetteImages\NetteImages::createThumb($l_img[0], $l_img[1], $l_img[2]);
         ');
     }
